@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations KeyFrames</title>
+    <style>
+        /*we can do animations for buttons or anything using keyframes*/
+        @keyframes rotateBtn {
+            0% {
+                margin-top: -100vh;
+                /* transform: rotate(45deg); */
+                transform: rotate(0deg);
+            }
+
+            30% {
+                margin-top: -20vh;
+                /* transform: rotate(180deg); */
+                transform: rotate(0deg);
+            }
+
+            60% {
+                margin-top: -10vh;
+                /* transform: rotate(270deg); */
+                /* transform: rotate(0deg); */
+                transform: rotate3d(0deg);
+            }
+
+            100% {
+                margin-top: 0vh;
+                /* transform: rotate(360deg); */
+                transform: rotateX(360deg);
+            }
+        }
+
+        div {
+            border: 1px solid gray;
+            max-width: auto;
+            max-height: auto;
+            width: 300px;
+            height: auto;
+            /* transform: translate(50%,50%); */
+            transform: translate(36vw, 22vh);
+            /*it is like margin now*/
+            position: absolute;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* animation: rotateBtn 1s linear initial 500ms; */
+            /* animation-timing-function: ; */
+        }
+
+        button {
+            animation: rotateBtn 1s normal 500ms infinite;/*we dont give infinite it rotates one time*/
+            position: absolute;
+            background-color: aquamarine;
+            border: none;
+            padding: 7px;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+        }
+
+        .btn-grad {
+            margin: 10px;
+            padding: 8px 13px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            outline: none;
+            border: none;
+            font-size: 10px;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* input label h1{}  instead of this we can use * for everything*/
+        * {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <!-- <fieldset> -->
+            <!-- <legend>Key Frames</legend> -->
+            <h1>Login Page</h1>
+            <label for="">Email Id</label><br />
+            <input type="email" placeholder="Enter your email" required name="" id="" /><br />
+            <label for="">Password</label><br />
+            <input type="password" placeholder="Enter password" required name="" id=""><br />
+            <button class="btn-grad" type="submit">Login</button>
+            <!-- </fieldset> -->
+        </form>
+    </div>
+</body>
+
+</html>

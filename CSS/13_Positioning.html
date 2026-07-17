@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning CSS</title>
+    <style>
+        /* .absoluteDiv {
+            margin-top: 300px;-->
+            position: absolute;
+            margin-top: -10px;
+            margin-left: 450px;-->
+            background-color: aqua;
+            Absolute only starts after the realtive it wherever it want to stay it can stay from the relative starting section
+            It overlaps with others it do not see where it is it only sees the location..
+
+        } */
+
+        .fixedDiv{
+            position: fixed ;
+            margin-top: 200px;
+            background-color: rgb(201, 221, 221);
+            /* margin-top: 650px;  It will will be fixed there forever do not change while we are scrolling.. */
+        }
+
+        div p{
+            border: 1px solid green;
+        }
+
+        /* .relativeDiv {
+            margin-top: 300px;
+            position: relative;
+            Any thing will start only from relative...we can see the overlapping through relative
+            static is same as relative but it does not show overlapping behavior
+        }
+
+        .relativeDiv p::first-line {
+            color: blueviolet;
+        }
+
+        div {
+            border: 2px solid red;
+            margin: 10px;
+        }
+
+        .stickyDiv {
+            margin-top: -200px;
+            position: sticky;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="absoluteDiv">
+        <p>absolute This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+
+    <div class="relativeDiv">
+        <p>relative This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+
+    <div class="stickyDiv">
+        <p>sticky This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div> -->
+
+    <!-- <div class="relativeDiv">
+        <p>relative This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div class="relativeDiv">
+        <p>relative This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div class="relativeDiv">
+        <p>relative This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div> -->
+
+    <!-- <div class="absoluteDiv">
+        <p>absolute This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div> absolute always overlaps with relative.. -->
+
+    <!-- <div class="staticDiv">
+        <p>static This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div> -->
+
+
+
+    <!-- <div class="stickyDiv">
+        <p>sticky This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div> -->
+
+    <!-- <div class="unsetDiv">
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div> -->
+
+    <!-- <div class="absoluteDiv">
+        <p>This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div> -->
+
+    <div class="fixedDiv">
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+    <div >
+        <p>unset This is Para1.Default value. Elements render in order, as they appear in the document flow.
+            The top, right, bottom, left and z-index properties do not apply.
+        </p>
+    </div>
+
+</body>
+
+</html>

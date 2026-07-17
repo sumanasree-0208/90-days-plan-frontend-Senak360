@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        p::before {
+            content: "This is image rendered using pseudo element";
+            display: block;
+            color: red;
+        }
+        p::after {
+            content: "This is image rendered using pseudo element";
+            display: block;
+            color: red;
+        }
+        input::placeholder{
+            color: cadetblue;
+        }
+        p::selection{
+            background-color: aqua;
+            color: blueviolet;
+        }
+        p::grammar-error{
+            background-color: red;
+            color: black;
+        }
+        p::spelling-error{
+            background-color: brown;
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="./background-image.jpg" width="300px" height="180px" alt=""> -->
+    <p>
+        pseudo-element Description
+        ::after Insert content after the content of an element
+        ::before Insert content before the content of an element
+        ::first-letter Selects the first letter of each element
+        ::first-line Selects the first line of each element
+        ::selection Matches the portion of an element that is selected by a user
+        ::backdrop Used to create a backdrop that hides the underlying document for an element
+        ::placeholder Allows you to style the placeholder text of a form element (Experimental)
+        ::marker For applying list-style attributes on a given element (Experimental)
+        ::spelling-error Represents a text segment which the browser has flagged as incorrectly spelled
+        (Experimental)
+        ::grammar-error Represents a text segment which the browser has flagged as grammatically
+        incorrect
+        (Experimental) Pseudo-elements, just like pseudo-classes, are added to a CSS selectors but
+        instead of describing a special state, they allow you to scope and style certain parts of an html element.
+        Pseudo-elements in CSS allow you to style specific parts of an element. Here are examples of commonly
+        used pseudo-elements along with code snippets:
+    </p>
+    <input type="text" placeholder="Enter first name" name="" id="">
+</body>
+
+</html>

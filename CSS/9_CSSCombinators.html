@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        /*
+        div p{}
+        div > p{}
+        div ~p{}
+        div + p{}
+        */
+        div+p {
+            color: rebeccapurple;
+        }
+
+        div~p {
+            color: red;
+        }
+
+        div>p {
+            color: blueviolet;
+        }
+
+        /* div p{
+            color: brown;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        Descendant Combinator: selector selector
+        A descendant combinator, represented by at least one space character (), selects elements that are a
+        descendant of the defined element. This combinator selects all descendants of the element (from child
+        elements on down)
+        <p>
+            Descendant Combinator: selector selector
+            A descendant combinator, represented by at least one space character (), selects elements that are a
+            descendant of the defined element. This combinator selects all descendants of the element (from child
+            elements on down)
+        </p>
+        <section>
+            <p>Descendant Combinator: selector selector</p>
+            <p>
+                Descendant Combinator: selector selector
+                A descendant combinator, represented by at least one space character (), selects elements that are a
+                descendant of the defined element. This combinator selects all descendants of the element (from child
+                elements on down)
+            </p>
+        </section>
+        <p>
+            Descendant Combinator: selector selector
+            A descendant combinator, represented by at least one space character (), selects elements that are a
+            descendant of the defined element. This combinator selects all descendants of the element (from child
+            elements on down)
+        </p>
+    </div>
+
+    <p>
+        Descendant Combinator: selector selector
+        A descendant combinator, represented by at least one space character (), selects elements that are a
+        descendant of the defined element. This combinator selects all descendants of the element (from child
+        elements on down)
+    </p>
+    <p>
+        Descendant Combinator: selector selector
+        A descendant combinator, represented by at least one space character (), selects elements that are a
+        descendant of the defined element. This combinator selects all descendants of the element (from child
+        elements on down)
+    </p>
+</body>
+
+</html>

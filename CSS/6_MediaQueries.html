@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery Concepts</title>
+    <style>
+        .mainDiv {
+            /* width: 200px;
+            height: 200px; */
+            border: 2px solid red;
+            overflow: auto;    /*Shows scroll bar when content overflowsss...*/
+        }
+        /* @media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) { */
+        @media screen and (max-width:768px) and (orientation: portrait){
+            .mainDiv{
+                width: 300px;
+                height: 300px;
+                color: blue;
+                overflow: auto;
+            }
+        }
+        @media screen and (min-width:1024px) and (orientation: landscape){
+            .mainDiv{
+                width: auto;   /*Automatically width and height changes along with the info given..*/
+                height: auto;
+                color: rgb(244, 35, 174);
+                border: 2px dashed green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <p>
+            OverFlow:
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+
+            OverFlow:
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+            OverFlow:
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+
+            OverFlow:
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+            OverFlow:
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+
+            OverFlow:
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+            OverFlow:
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+
+            OverFlow:
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+            
+        </p>
+    </div>
+    <!-- <p>
+        OverFlow:
+        In CSS, the overflow property is used to specify how content that overflows the element's box should be
+        handled. This property is useful when the content within an element is larger than the element itself.
+    </p> -->
+</body>
+
+</html>

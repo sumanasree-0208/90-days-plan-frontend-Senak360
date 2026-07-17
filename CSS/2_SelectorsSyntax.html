@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Single line selector */
+
+        /* multi line selector 
+        selector,selector2,selector1{
+            property:value;
+            property2:value;
+        } */
+        p,ol {
+            list-style-type: square;
+            color: red;
+        }
+        ul{
+            list-style-type: number;
+            color: blue;
+        }
+        p{
+            color: rgb(97, 97, 235); 
+        }
+        li{
+            color: rgba(202, 19, 132, 0.558);
+        }
+        /* p,li,ul,ol,div,h1{
+            color: brown;
+        } */
+        /* for class use dot */
+        .inputField{
+            background-color: lightblue; /*!important*/
+        }
+        /* .inputField{
+            background-color: aqua;
+        } */
+        .lastName{ 
+            background-color: lightgray;
+        }
+        /* for id use # id will be given priority first... */
+        #lastNameId{
+            background-color: lightgray;
+        }
+        button:hover{
+            cursor: progress;     /* or pointer for hand gesture or crosshair etc..*/
+        }
+        div p{
+            color: rgb(94, 11, 172);
+        }
+        div > p{
+            color: rgb(216, 14, 41);
+        }
+        div + p{
+            color: rgb(21, 214, 205);
+        }    /* immediate afer div if we give ~ means all oaras after div*/
+        div ~p{
+            color: lightblue;
+        }
+        input[type="range"]{
+            background-color: brown;
+            color: rgb(20, 19, 19);
+        }
+        li:nth-child(2){    /* second list color is blue... we can also give odd/even instead of 2 */
+            color: blue;
+        }
+        input:not([disabled]){   /*check this not disabled clearly if it is there in input disabled then it is not applyy..*/
+            background-color: black; 
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is the selectors and Syntax of the css..</p>
+    <ol>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Dotnet</li>
+    </ol>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Dotnet</li>
+    </ul>
+    <h1>This is Header1</h1>
+    <label for="firstNameId">First Name:</label>
+    <input type="text" placeholder="Enter first name" id="firstNameId" class="inputField"/>
+    <input type="text" placeholder="Enter last name" id="lastNameId" class="inputField"/>
+    <label for="rangeId"></label>
+    <input type="range" min="10" max="20" value="40" id="rangeId" class="inputField"/>
+    <div>
+        <p>This is paragraph inside division</p>
+    </div>
+    <div>
+        <p>This is paragraph inside division2</p>
+        <p>This is paragraph inside division3</p>
+    </div>
+    <p>This is paragrah Outside and End of the html page...</p>
+    <p>This is paragrah Outside and End of the html page...</p>
+    <button>Submit</button>
+</body>
+
+</html>
