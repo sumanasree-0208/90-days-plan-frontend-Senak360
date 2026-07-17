@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+
+            <legend>Personal Information</legend>
+            <!-- with this a box will get with this text -->
+            <!-- we can give every data down there in here -->
+
+            <label for="firstNameId">First Name</label>
+            <input type="text" name="firstname" id="firstNameId" /><br />
+
+            <label for="lastNameId">Last Name</label>
+            <input type="text" name="lastname" id="lastNameId" /><br />
+
+            <label for="uploadTesumeId">Resume</label>
+            <input type="file" name="uploadResume" id="uploadResumeId" /> <br />
+
+            <label for="">Select Courses</label>
+            <input type="checkbox" name="course1" id="course1" value="Java" />
+            <label for="course1">Java</label>
+            <input type="checkbox" name="course2" id="course2" value="Dotnet" />
+            <label for="course2">Dotnet</label>
+
+            <label for="passwordId">Password</label>
+            <input type="password" name="password" id="passwordId" /><br />
+
+            <label for="colorId">Select Color</label>
+            <input type="color" name="color" id="colorId" /> <br />
+
+            <label for="dateOfBirthId">Select DOB</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirthId" /> <br />
+
+            <label for="courseId">Select Course</label>
+            <select name="courses" id="coursesId">
+                <!-- <option value=""></option>  use this if have one option -->
+                <optgroup>
+                    <option value="">Java</option>
+                    <option value="">Python</option>
+                    <option value="">JFSD</option>
+                    <option value="">Dotnet</option>
+                    <option value="">PFSD</option>
+                </optgroup>
+            </select> <br />
+
+            <label for="aboutMeId">About me</label>
+            <textarea name="aboutme" id="aboutMeId" cols="30" rows="20"></textarea>
+            <!-- text area can extend to how much it can want... -->
+
+            <input type="submit" value="Submit" />
+            <button>Submit</button>
+
+        </fieldset>
+
+        <!-- <label for="firstNameId">First Name</label>
+        <input type="text" name="firstname" id="firstNameId" /><br />
+
+        <label for="lastNameId">Last Name</label>
+        <input type="text" name="lastname" id="lastNameId" /><br />
+
+        <label for="uploadTesumeId">Resume</label>
+        <input type="file" name="uploadResume" id="uploadResumeId" /> <br />
+
+        <label for="">Select Courses</label>
+        <input type="checkbox" name="course1" id="course1" value="Java"/>
+        <label for="course1">Java</label>
+        <input type="checkbox" name="course2" id="course2" value="Dotnet"/>
+        <label for="course2">Dotnet</label>
+
+        <label for="passwordId">Password</label>
+        <input type="password" name="password" id="passwordId" /><br/>
+
+        <label for="colorId">Select Color</label>
+        <input type="color" name="color" id="colorId" /> <br/>
+
+        <label for="dateOfBirthId">Select DOB</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirthId" /> <br/>
+
+        <label for="courseId">Select Course</label>
+        <select name="courses" id="coursesId">
+             <option value=""></option>  use this if have one option
+             <optgroup>
+                <option value="">Java</option>
+                <option value="">Python</option>
+                <option value="">JFSD</option>
+                <option value="">Dotnet</option>
+                <option value="">PFSD</option>
+             </optgroup>
+        </select> <br/>
+
+        <input type="submit" value="Submit" />
+        <button>Submit</button> -->
+    </form>
+</body>
+
+</html>
